@@ -8,18 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-sans overflow-hidden overflow-y-auto">
+<body class="font-sans overflow-hidden overflow-y-auto box-border">
 
-    <section class="bg-black h-screen text-[#F5F6F6] w-screen p-4 ">
-        <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="fixed w-screen h-screen z-10">
-            <source src="https://joinairforce.baf.mil.bd/public/img/career.mp4" type="video/mp4">
-        </video> -->
-
+    <section class="bg-black h-screen text-[#F5F6F6] w-screen  relative">
         <!--logo & top navbar -->
-        <nav class="flex flex-row gap-20 justify-between items-center   mx-10 my-2 fixed ">
-            <a href=""><img src="./assets/img/logo-light.png" alt="" class="w-72"></a>
+        <nav class="flex flex-row gap-24 justify-between items-center   mx-14 py-5 fixed  z-50">
+            <a href=""><img src="./assets/img/logo-light.png" alt="" class="w-80"></a>
             <div>
-                <ul class="flex flex-row text-[16px] font-semibold">
+                <ul class="flex flex-row text-[14px] font-semibold">
                     <li><a href="" class="p-2">HOME</a></li>
                     <li><a href="" class="p-2">CAREER</a></li>
                     <li><a href="" class="p-2">APPLY ONLINE</a></li>
@@ -31,16 +27,21 @@
                 </ul>
             </div>
         </nav>
-        <p class="h-[190px]"></p>
-        <div class=" h-[calc(screen-58px)]">
-            <div>
+        <!-- bg-video -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"
+            class="absolute -z-1 w-full aspect-auto ">
+            <source src="https://joinairforce.baf.mil.bd/public/img/career.mp4" type="video/mp4">
+        </video>
+        <p class="h-[225px]"></p>
+        <div class="absolute z-50">
+            <div class="">
                 <h1 class="text-[56px] text-white text-center ">JOIN BANGLADESH AIR FORCE</h1>
                 <p class="text-[30px] text-[#90EE90] text-center">FREE SHALL WE KEEP THE SKY OF BANGLADESH</p>
             </div>
             <!-- notices -->
-            <div class="flex flex-row items-center mt-[200px] gap-0 ">
-                <span class="bg-[#0D5198] text-white p-2 font-semibold">NOTICES:</span>
-                <marquee behavior="" direction="left" scrollamount="8" class="bg-[#0B0B0B] py-2 w-full ">
+            <div class="flex flex-row items-center mt-[200px] gap-0 border-[#0D5198] border-t-[1px]">
+                <span class="bg-[#0D5198] text-white p-3 font-semibold">NOTICES:</span>
+                <marquee behavior="" direction="left" scrollamount="8" class="bg-[#0B0B0B] py-3 w-full ">
                     <a href="https://joinairforce.baf.mil.bd/image/80" target="_blank"
                         style="color: #fff;margin:0 0 0 4rem">**
                         Circular
@@ -203,10 +204,10 @@
 
         <h4 class="underline text-white text-center text-xl font-bold py-6 leading-3">CONTACT US</h4>
         <!-- left -->
-        <div class="flex flex-row justify-around items-center leading-6">
-            <div class="text-white text-center flex flex-col gap-1">
-                <p class="text-2xl text-start">Visit Counter</p>
-                <div class="my-2">
+        <div class="flex flex-row justify-center items-center leading-6 py-10 px-4 text-base">
+            <div class="text-white text-center flex flex-col gap-1 w-4/12">
+                <p class="text-2xl">Visit Counter</p>
+                <div class="my-2 mx-auto">
                     <img src="./assets/img/counter.png" alt="">
                 </div>
                 <p>Refund Policy</p>
@@ -214,13 +215,40 @@
                 <p>How to Apply</p>
 
             </div>
-            <hr class="w-2">
+            <hr class="w-40 h-4 rotate-90">
             <!-- middle -->
-            <div class=""></div>
+            <div class="text-white text-start flex flex-col gap-1 w-4/12">
+                <p>Directorate of Recruitment</p>
+                <p>Air Headquarters</p>
+                <p>Dhaka Cantonment, Dhaka-1206</p>
+            </div>
+            <hr class="w-40 h-4 rotate-90">
             <!-- right -->
-            <div class=""></div>
+            <div class="text-white text-start flex flex-col gap-2 w-4/12">
+                
+                <p>Bangladesh Air Force</p>
+            
+                <p>Information and Selection Centre</p>
+            
+                <p>Email: helpdesk@baf.mil.bd</p>
+            
+                <p>Telephone: 01769 990 880 (9am to 2pm, Except Holidays)</p>
+            
+            
+               <p>Bangladesh Air Force Academy Website</p>
+            </div>
         </div>
     </section>
+    <!-- footer -->
+    <footer class="bg-[#100ABD] flex flex-row justify-between items-center py-4 px-8 text-white">
+        <div class="font-serif">
+            <p> &copy; 2024 <span class="text-[#F2CB80]">Bangladesh Air Force.</span>  All Rights Reserved.</p>
+        </div>
+        <div class="">
+            <p class="font-serif">Powered by: BAF Communication Unit</p>
+        </div>
+
+    </footer>
 
 </body>
 
